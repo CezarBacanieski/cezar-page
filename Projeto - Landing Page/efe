@@ -1,0 +1,53 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF;
+    list-style: none; /* Remover marcadores de lista */
+    padding: 5px; /* Espaçamento interno para a caixa branca */
+    border-radius: 20px; /* Bordas arredondadas para a caixa branca */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+
+.social-links li {
+    display: inline; /* Exibir em linha horizontal */
+    margin-right: 20px; /* Espaçamento entre os ícones */
+    background-color: #FFF; /* Cor de fundo da caixa branca */
+    padding: 10px; /* Espaçamento interno para a caixa branca dos ícones */
+    border-radius: 50%; /* Bordas arredondadas para os ícones */
+}
+
+.social-links a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #333; /* Cor do ícone */
+    font-size: 24px; /* Tamanho da fonte do ícone */
+}
+
+/* Adicione cores aos ícones de redes sociais */
+.fa-linkedin {
+    color: #0077B5; /* Cor do LinkedIn */
+}
+
+.fa-instagram {
+    color: #E4405F; /* Cor do Instagram */
+}
+
+.fa-whatsapp {
+    color: #25D366; /* Cor do WhatsApp */
+}
+
+/* Adicione um estilo para o link de e-mail */
+.fa-envelope {
+    color: #FFA500; /* Cor do ícone de e-mail */
+    font-size: 24px; /* Tamanho da fonte do ícone de e-mail */
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto do e-mail */
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Sublinhe os links ao passar o mouse */
+}
+
+
+
+
+

@@ -1,0 +1,333 @@
+:root {
+    --primery-color: #0A1128;
+    --white-color: #FFF;
+    --light-gray-color: #eee;
+    --gap: 3rem;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+
+.main-bg {
+    background-color: #0A1128;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%232D2D15' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2333200E'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    background-position: center center;
+    color: var(--white-color)
+}
+
+.white-bg {
+    background-color: var(--white-color);
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap)
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray-color);
+    z-index: 1;
+    
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu h1 {
+    font-size: 2.3 rem;
+    color: var(--primery-color)
+}
+
+.menu h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 2rem;
+    color: var(--primery-color); /* Cor padrão */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.menu ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primery-color);
+    transition: width 0.3s ease; /* Animação do sublinhado */
+}
+
+.menu ul li a:hover::before {
+    width: 100%; /* Expandir o sublinhado ao passar o mouse */
+}
+
+.menu ul li a:hover {
+    background-color: var(--primery-color); /* Cor de fundo ao passar o mouse */
+    color: var(--white-color); /* Cor ao passar o mouse */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.main-spacing {
+    height: 225px
+}
+
+
+.about-content {
+    position: relative;
+    top: -80px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+}
+
+.about-text-content, .about-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.about-text-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.about-text-content h2 {
+    font-size: 35px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.about-img img {
+    position: relative;
+    top: 145px;
+    padding-left: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.tech h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #FFF; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.img-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tech-icon {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    flex-basis: calc(25% - 100px); 
+    order: 2; 
+}
+
+
+.tech-icon-triad {
+    order: 1; 
+}
+
+.tech-icon img {
+    display: inline;
+    width: 100px;
+    min-height: 100px;
+    transition: transform 0.3s ease;
+}
+
+
+.tech-icon:hover img {
+    transform: scale(1.2);
+}
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.soft-content h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 200px;
+    color: #FFF; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.grid h3 {
+    font-size: 3rem;
+}
+
+
+.grid article {
+    background-color: #f5f5f5; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    padding: 60px; 
+    margin: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.grid h4 {
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.grid p {
+    font-size: 1.5rem; 
+    color: #666; 
+    line-height: 1.4; 
+    text-align: start;
+}
+
+/* Estilos para o footer */
+.contact {
+    color: #fff; /* Cor do texto */
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+    margin-top: 150px;
+}
+
+.footer-content {
+    text-align: center; /* Centralizar o conteúdo */
+}
+
+.footer-content h2 {
+    font-size: 35px; /* Tamanho da fonte do título */
+    font-weight: bold; /* Peso da fonte */
+    text-transform: uppercase; /* Texto em caixa alta */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    margin-bottom: 50px;
+}
+
+/* Estilos para os ícones das redes sociais */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover espaçamento interno */
+    margin: 0; /* Remover margens */
+    bottom: 20px; /* Distância do fundo da tela */
+    left: 50%; /* Centralizar horizontalmente na tela */
+    transform: translateX(-50%);
+}
+
+.social-links li {
+    background-color: #FFF; /* Cor de fundo da caixa branca */
+    border-radius: 50%; /* Bordas arredondadas para os ícones */
+    display: inline-flex; /* Exibir os ícones como flexíveis */
+    align-items: center; /* Centralizar verticalmente os ícones */
+    justify-content: center; /* Centralizar horizontalmente os ícones */
+    width: 40px; /* Largura fixa para a caixa branca */
+    height: 40px; /* Altura fixa para a caixa branca */
+    margin-right: 20px; /* Espaçamento entre os ícones */
+}
+
+.social-links a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #333; /* Cor do texto dos ícones */
+    font-size: 24px; /* Tamanho da fonte dos ícones */
+}
+
+/* Estilos para os ícones específicos de redes sociais */
+.fa-linkedin {
+    color: #0077B5; /* Cor do LinkedIn */
+}
+
+.fa-instagram {
+    color: #E4405F; /* Cor do Instagram */
+}
+
+.fa-whatsapp {
+    color: #25D366; /* Cor do WhatsApp */
+}
+
+.fa-envelope {
+    color: #FFA500; /* Cor do ícone de e-mail */
+}
+
+@media (max-width: 800) {
+    .about-content, .grid {
+        grid-template-columns: 1fr;
+    }
+}
